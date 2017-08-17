@@ -33,10 +33,6 @@
 <link href="./assets/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
 <link href="./assets/ico/favicon.png" rel="shortcut icon">
 
-<!-- REV SLIDER CSS FILES -->
-<link rel="stylesheet" type="text/css" href="./assets/revolution/settings.css">
-<link rel="stylesheet" type="text/css" href="./assets/revolution/layers.css">
-<link rel="stylesheet" type="text/css" href="./assets/revolution/navigation.css">
 
 <!-- CSS FILES -->
 <link href="./assets/css/flat-icon.css" rel="stylesheet">
@@ -76,58 +72,3 @@
 <script src='./assets/js/isotope.pkgd.min.js'></script> 
 <script src="./assets/js/owl.carousel.min.js"></script> 
 <script src="./assets/js/scripts.js"></script> 
-
-<!-- REVOLUTION JS FILES --> 
-<script type="text/javascript" src="./assets/revolution/jquery.themepunch.tools.min.js"></script> 
-<script type="text/javascript" src="./assets/revolution/jquery.themepunch.revolution.min.js"></script> 
-<script type="text/javascript" src="./assets/revolution/extensions/revolution.extension.actions.min.js"></script> 
-<script type="text/javascript" src="./assets/revolution/extensions/revolution.extension.carousel.min.js"></script> 
-<script type="text/javascript" src="./assets/revolution/extensions/revolution.extension.kenburn.min.js"></script> 
-<script type="text/javascript" src="./assets/revolution/extensions/revolution.extension.layeranimation.min.js"></script> 
-<script type="text/javascript" src="./assets/revolution/extensions/revolution.extension.migration.min.js"></script> 
-<script type="text/javascript" src="./assets/revolution/extensions/revolution.extension.navigation.min.js"></script> 
-<script type="text/javascript" src="./assets/revolution/extensions/revolution.extension.parallax.min.js"></script> 
-<script type="text/javascript" src="./assets/revolution/extensions/revolution.extension.slideanims.min.js"></script> 
-<script type="text/javascript" src="./assets/revolution/extensions/revolution.extension.video.min.js"></script> 
-<script type = "text/javascript" >
-	var tpj = jQuery;
-	var revapi70;
-	tpj(document).ready(function() {
-	if (tpj("#rev_slider_70_1").revolution == undefined) {
-		revslider_showDoubleJqueryError("#rev_slider_70_1");
-	} else {
-		revapi70 = tpj("#rev_slider_70_1").show().revolution({
-			sliderType: "hero",
-			jsFileLocation: "./assets/revolution/",
-			sliderLayout: "fullscreen",
-			dottedOverlay: "none",
-			delay: 9000,
-			navigation: {},
-			responsiveLevels: [1240, 1024, 778, 480],
-			gridwidth: [1400, 970, 778, 480],
-			gridheight: [768, 768, 960, 720],
-			lazyType: "none",
-			parallax: {
-				type: "mouse+scroll",
-				origo: "slidercenter",
-				speed: 2000,
-				levels: [1, 2, 3, 20, 25, 30, 35, 40, 45, 50],
-				disable_onmobile: "on"
-			},
-			shadow: 0,
-			spinner: "spinner2",
-			autoHeight: "off",
-			disableProgressBar: "on",
-			hideThumbsOnMobile: "off",
-			hideSliderAtLimit: 0,
-			hideCaptionAtLimit: 0,
-			hideAllCaptionAtLilmit: 0,
-			debugMode: false,
-			fallbacks: {
-				simplifyAll: "off",
-				disableFocusListener: false,
-			}
-		});
-	}
-	}); 
-</script>

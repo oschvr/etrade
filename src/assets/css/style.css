@@ -262,10 +262,16 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 .section-titles .upper-title{ letter-spacing:3px; color:#083e73; font-weight:700;}
 .section-titles .main-title{ font-size:70px; position:relative; font-weight:700;}
 .section-titles .main-title:before{content:'';width:14px; height:14px; background:#083e73; position:absolute; left:-20px; bottom:20px; border-radius:50%;}
-.section-titles .title-intro{ max-width:80%; font-size:21px; line-height:30px; margin-bottom:60px; position:relative; padding-bottom:30px; color:#9ba0a9; font-family: 'Playfair Display', serif;}
+.section-titles .title-intro{ max-width:80%; font-size:21px; line-height:30px; margin-bottom:30px; position:relative; padding-bottom:30px; color:#9ba0a9; font-family: 'Playfair Display', serif;}
 .section-titles .title-intro span{ color:#083e73; font-weight:400; font-style:italic;}
 .section-titles .title-intro:after{content:''; width:100px; height:3px; background:#083e73; position:absolute; left:0; bottom:0;}
 
+/* RENT TITLES */
+.rent-titles{width:100%; float:left; text-align:left;}
+.rent-titles .rent-title{ font-size:30px; position:relative; font-weight:700;}
+.rent-titles .rent-title:before{content:'';width:7px; height:7px; background:#083e73; position:absolute; left:-15px; bottom:7.5px; border-radius:50%;}
+.rent-titles .rent-description{ font-size:25px; position:relative; font-weight:400;}
+.rent-titles .rent-description:after{content:''; width:100px; height:3px; background:#083e73; position:absolute; left:0; bottom:-10px;}
 
 
 /* ERRORS */
@@ -296,7 +302,6 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 .topbar .company-infos li i{ float:left; margin-right:6px;}
 .topbar .company-infos li a{ float:left; color:#fff;}
 .topbar .company-infos li a:hover{ color:#083e73;}
-
 
 
 /* NAVBAR */
@@ -335,35 +340,15 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 .int-header .breadcrumb li a{ float:left; color:#fff;}
 	
 
-
-/* REVOLUTION SLIDER */	
-.rev-slider{ width:100%; height:100%; position:relative; text-align:right;}
-.rev-slider .text1{font-family: 'Playfair Display', serif; color:#586f8b; margin-bottom:20px;}
-.rev-slider .text2{ font-weight:700; color:#fff; position:relative; padding-right:20px;}
-.rev-slider .text2:after{content:''; width:12px; height:12px; background:#083e73; border-radius:12px; position:absolute; right:0; bottom:10px;}
-.rev-slider .slide-btn{ height:48px; line-height:50px; padding:0 25px; background:#586f8b; border-radius:4px; color:#fff; font-size:15px; font-weight:700;}
-.rev-slider .title1-bg{ padding:10px 20px; color:#fff; font-weight:700; background:rgba(0,0,0,0.4); border-radius:4px;}
-.rev-slider .title2-bg{ padding:10px 20px; color:#fff; font-weight:700; background:#083e73; border-radius:4px;}
-.rev-slider .new-slide-btn{ background:none !important; color:#fff; font-weight:700; border-bottom:3px solid #fff; padding:0 6px; padding-bottom:6px;}
-.rev-slider .new-slide-btn:hover{ background:none !important; color:#083e73 !important; border-bottom:3px solid #083e73 !important;}
-.rev-slider .tp-leftarrow.metis{ float:left;}
-.rev-slider .tp-leftarrow.metis:before{ content:"\f111"; font-family:Flaticon; transform:rotate(180deg);}
-.rev-slider .tp-rightarrow.metis{ float:right;}
-.rev-slider .tp-rightarrow.metis:before{ content:"\f111"; font-family:Flaticon; }
-.rev-slider .tp-rightarrow.metis:hover:before{ transform:scale(1) !important;}
-
-
-
 /* PREDIO SLIDER */
 .predio-slider{ width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden;}
 .predio-slider .owl-item{ position:relative;}
-.predio-slider .owl-item:after{content:''; width:100%; height:100%; position:absolute; left:0; top:0; background:url(../images/slider-pattern.png) center #000; opacity:0.5; z-index:1;}
+.predio-slider .owl-item:after{content:''; width:100%; height:100%; position:absolute; left:0; top:0; background:url(../images/slider-pattern.png) center #8F8F8F; opacity:0.1; z-index:1;}
 .predio-slider .owl-item img{ max-width:inherit; width:inherit; min-width:100%; min-height:100%;}
 .predio-slider .hero-content{ width:100%; position:absolute; left:0; top:0; padding:calc(50vh - 100px) 0; z-index:2;}
-.predio-slider .hero-content .text1{font-family: 'Playfair Display', serif; color:#083e73; font-size:70px; margin-bottom:20px;}
-.predio-slider .hero-content .text2{ font-weight:700; font-size:52px; color:#fff; position:relative; padding-left:20px; margin-bottom:40px;}
-.predio-slider .hero-content .text2:after{content:''; width:12px; height:12px; background:#083e73; border-radius:12px; position:absolute; left:0; bottom:10px;}
-.predio-slider .hero-content .slide-btn{ height:48px; line-height:50px; padding:0 25px; display:inline-block; background:#083e73; border-radius:4px; color:#fff; font-size:15px; font-weight:700;}
+.predio-slider .hero-content .text1{ color:#EDEDED; font-weight:400; font-size:22px; margin-bottom:10px; word-wrap: break-word;}
+.predio-slider .hero-content .text2{ font-weight:700; font-size:14px; color:#fff; position:relative; padding-left:20px; margin-bottom:40px; word-wrap: break-word;}
+.predio-slider .hero-content .slide-btn{ height:48px; line-height:50px; padding:0 30px; display:inline-block; background:#083e73; border-radius:4px; color:#fff; font-size:25px; font-weight:700;}
 .predio-slider .hero-content .slide-btn:hover{ background:#; color:#384254; text-decoration:none; box-shadow:0 10px 40px rgba(0,0,0,0.2);}
 .predio-slider .owl-nav{ width:100px; height:100%; position:absolute; right:20px; top:0;}
 .predio-slider .owl-nav .owl-prev{ width:50px; height:40px; line-height:40px; float:left; border:1px solid rgba(255,255,255,0.4); text-indent:-99999px; position:absolute; top:50%; right:49px; margin-top:-20px; padding:0 15px; color:#fff; transform:rotate(180deg);}
@@ -375,6 +360,27 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 .predio-slider .owl-dots{ width:100%; height:40px; position:absolute; left:0; bottom:0; margin:0; text-align:center;}
 
 
+@media only screen and (min-width: 768px){
+
+	/* PREDIO SLIDER DESKTOP */
+	.predio-slider{ width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden;}
+	.predio-slider .owl-item{ position:relative;}
+	.predio-slider .owl-item:after{content:''; width:100%; height:100%; position:absolute; left:0; top:0; background:url(../images/slider-pattern.png) center #000; opacity:0.25; z-index:1;}
+	.predio-slider .owl-item img{ max-width:inherit; width:inherit; min-width:100%; min-height:100%;}
+	.predio-slider .hero-content{ width:100%; position:absolute; left:0; top:0; padding:calc(50vh - 100px) 0; z-index:2;}
+	.predio-slider .hero-content .text1{ color:#D2D2D2; font-size:75px; margin-bottom:20px;}
+	.predio-slider .hero-content .text2{ font-weight:700; font-size:52px; color:#fff; position:relative; padding-left:20px; margin-bottom:40px;}
+	.predio-slider .hero-content .slide-btn{ height:48px; line-height:50px; padding:0 25px; display:inline-block; background:#083e73; border-radius:4px; color:#fff; font-size:15px; font-weight:700;}
+	.predio-slider .hero-content .slide-btn:hover{ background:#; color:#384254; text-decoration:none; box-shadow:0 10px 40px rgba(0,0,0,0.2);}
+	.predio-slider .owl-nav{ width:100px; height:100%; position:absolute; right:20px; top:0;}
+	.predio-slider .owl-nav .owl-prev{ width:50px; height:40px; line-height:40px; float:left; border:1px solid rgba(255,255,255,0.4); text-indent:-99999px; position:absolute; top:50%; right:49px; margin-top:-20px; padding:0 15px; color:#fff; transform:rotate(180deg);}
+	.predio-slider .owl-nav .owl-prev:before{content:"\f111"; font-family:Flaticon; float:left; text-indent:0;}
+	.predio-slider .owl-nav .owl-prev:hover{ color:#083e73;}
+	.predio-slider .owl-nav .owl-next{ width:50px; height:40px; line-height:40px; float:left; border:1px solid rgba(255,255,255,0.4); text-indent:-99999px; position:absolute; top:50%; right:0; margin-top:-20px; padding:0 15px; color:#fff;}
+	.predio-slider .owl-nav .owl-next:before{content:"\f111"; font-family:Flaticon; float:left; text-indent:0;}
+	.predio-slider .owl-nav .owl-next:hover{ color:#083e73;}
+	.predio-slider .owl-dots{ width:100%; height:40px; position:absolute; left:0; bottom:0; margin:0; text-align:center;}	
+}
 
 /* HERO VIDEO */
 .hero-video{ width:100%; height:100%; position:absolute; left:0; top:0;}
@@ -574,7 +580,7 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 
 
 /* HOME SERVICES */
-.home-services{ width:100%; float:left; padding:100px 0; background:url("") bottom center no-repeat;}
+.home-services{ width:100%; float:left; padding:50px 0; background:url("") bottom center no-repeat;}
 .home-services .services-box{ width:100%; float:left;}
 .home-services i{ display:inline-block;}
 .home-services i{background: -webkit-linear-gradient(#9ba0a9, #384254); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow:0 10px 10px rgba(0,0,0,0.2); }
@@ -585,8 +591,9 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 
 
 /* FUN FACTS */
-.fun-facts{ width:100%; float:left; background:#083e73; padding:100px 0;}
+.fun-facts{ width:100%; float:left; background:#083e73; padding:50px 0;}
 .fun-facts h2{ font-size:90px; font-weight:700; margin-top:0; color:#fff;}
+.fun-facts h3{ font-size:35px; font-weight:700; margin-top:0; margin-bottom: 15px; color:#fff;}
 .fun-facts h4{  font-family:'Playfair Display', serif; font-size:19px; margin-bottom:50px; position:relative; padding-bottom:30px; color:#fff;}
 .fun-facts h4:after{content:''; width:100px; height:3px; background:#fff; position:absolute; left:0; bottom:0;}
 .fun-facts h5{font-weight:700; font-size:16px; letter-spacing:3px; margin-bottom:10px; color:#fff;}
@@ -602,7 +609,7 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 
 
 /* SOLUTIONS */
-.solutions{ width:100%; float:left; padding-top:100px; background:url("") bottom center no-repeat;}
+.solutions{ width:100%; float:left; padding-top:50px; background:url("") bottom center no-repeat;}
 .solutions .features-box{ width:100%; margin-bottom:100px;}
 .solutions .features-box figure{ width:100%; float:left; margin-bottom:15px; position:relative;}
 .solutions .features-box figure img{ width:100%; border-radius:6px;}
@@ -614,6 +621,11 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 .solutions .features-box a:hover{ text-decoration:none; border-bottom:2px solid transparent;}
 
 
+/* RENT */
+.rent{ width:100%; float:left; padding-bottom: 50px; background:url("") bottom center no-repeat;}
+.rent .switch-btn{ height:48px; line-height:50px; padding:0 25px; display:inline-block; background:#083e73; border-radius:4px; color:#fff; font-size:15px; font-weight:700;}
+.rent .rent-img { padding: 20px; }
+.rent-img-inner { max-width: 25%; }
 
 /* GET OFFER */
 .get-offer{ width:100%; float:left; padding:100px 0; overflow:hidden; background:#384254; text-align:center; color:#fff; position:relative;}
@@ -669,9 +681,10 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 
 
 /* ABOUT PREDIO */
-.about-predio{ width:100%; float:left; padding:100px 0;}
-.about-predio .lead{ display:block; font-family:'Playfair Display', serif; font-size:20px; line-height:30px; color:#9ba0a9; margin-bottom:35px;}
-.about-predio .signature{ width:125px;}
+.about-etrade{ width:100%; float:left; padding:50px 0;}
+.about-etrade .lead{ display:block; font-family:'Playfair Display', serif; font-size:20px; line-height:30px; color:#9ba0a9; margin-bottom:35px;}
+.about-etrade .signature{ width:125px;}
+.about-etrade .download-btn{ height:48px; line-height:50px; padding:0 25px; display:inline-block; background:#083e73; border-radius:4px; color:#fff; font-size:15px; font-weight:700;}
 
 
 
@@ -782,7 +795,7 @@ section{ background-position:20% -20% !important;}
 .fun-facts .fact-box h6{ font-size:24px; color:#fff; margin:20px 0;}
 .fun-facts .fact-box .odometer{ height:50px; font-size:55px;}
 .fun-facts .fact-box .symbol{ float:left; font-family:'Fjalla One', sans-serif; font-size:29px; color:#fff; opacity:0.6; transform:translateY(-5px);}
-.about-predio .signature{ margin-bottom:40px;}
+.about-etrade .signature{ margin-bottom:40px;}
 .get-offer .image{ height:100%; top:0 !important;}
 .video .video-container{  top:0 !important;}
 .video .video-container video{ min-height:150%; max-width:inherit; max-height:inherit;}
