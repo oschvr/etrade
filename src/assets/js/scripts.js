@@ -119,9 +119,7 @@ $(document).ready(function() {
 		  var filterValue = $( this ).attr('data-filter');
 		  $grid.isotope({ filter: filterValue });      
 		});
-		});
-		
-	
+	});
 
 });
 
@@ -140,9 +138,9 @@ $(document).ready(function() {
 		
 			if ($(document).scrollTop() > position2-300){
 			if (!lastWasLower)
-				$('#1').html('43');
-				$('#2').html('9');
-				$('#3').html('98');
+				$('#1').html('44');
+				$('#2').html('10');
+				$('#3').html('61');
 		
 			lastWasLower = true;
 				} else {

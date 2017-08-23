@@ -20,16 +20,12 @@ import { RentComponent } from './rent/rent.component';
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'inicio',
+    redirectTo: '',
     pathMatch: 'full'
   },
   {
-    path: 'inicio',
+    path: '',
     component: HomeComponent
-  },
-  {
-    path: 'empresa',
-    component: CompanyComponent
   }
 ]
 

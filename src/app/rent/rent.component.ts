@@ -15,8 +15,8 @@ export class RentComponent implements OnInit {
 
   currentMachine: Object;
   public machinery = [{
-    "name" : "Retroexcavadora CAT 320D",
-    "description" : "Excavadora CAT 320-D Cabina cerrada con A/C, brazo 5.70 m, cucharon de 1.0 m3, tren de rodaje estándar, zapatas de 700 mm, dos lámparas de trabajo montadas sobre cabina.",
+    "name" : "Excavadora CAT 320D",
+    "description" : "Excavadora CAT 320D Cabina cerrada con A/C, brazo 5.70 m, cucharon de 1.0 m3, tren de rodaje estándar, zapatas de 700 mm, dos lámparas de trabajo montadas sobre cabina.",
     "img": "./assets/images/320d.png",
     "unitPrice": 535.42,
     "unitPriceOperator": 1154.05

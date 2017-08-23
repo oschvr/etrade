@@ -12,4 +12,8 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit(){
+    console.log("Contact Trigger");
+  }
+
 }

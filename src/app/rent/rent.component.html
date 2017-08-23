@@ -20,7 +20,6 @@
             </div>
           </div>
         </div>
-        <hr>
       </div>
       <div class="col-xs-12" *ngIf="activeQuote" id="print-section">
         <div class="row">
@@ -34,6 +33,7 @@
             <form>
               <div class="form-group">
                 <label for="hours">Horas Estimadas*</label>
+
                 <input [(ngModel)]="estHours" name="estHours" class="form-control" type="text" id="remove-print">
               </div>
 
@@ -68,16 +68,16 @@
               
               <div class="form-group">
                 <label for="import">Total</label>
+                <small>(No incluye flete)</small>
                 <h3 class="pull-right" *ngIf="estHours && !operator">{{(currentMachine.unitPrice * estHours) + (tax * (currentMachine.unitPrice * estHours)) | currency:'MXN':true:'2.2-2'}}</h3>
                 <h3 class="pull-right" *ngIf="estHours && operator">{{(currentMachine.unitPriceOperator * estHours) + (tax * (currentMachine.unitPriceOperator * estHours)) | currency:'MXN':true:'2.2-2'}}</h3>
               </div>
-              <br><hr>
               <button class="btn btn-lg btn-primary" id="remove-print" (click)="print()">Imprimir</button>
             </form>
           </div>
-          <hr>
         </div>
       </div>
     </div>
+    <hr>    
   </div>
 </section>

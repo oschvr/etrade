@@ -308,7 +308,7 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 .navbar-default{ width:100%; float:left; border:none; border-radius:0; background:none; position:relative; z-index:9;}
 .navbar-default .navbar-brand{ height:auto; float:left; background:#fff; border-radius:0 4px 4px 0; position:relative;}
 .navbar-default .navbar-brand:before{content:''; width:100vh; height:100%; position:absolute; left:-100vh; top:0; background:#fff;}
-.navbar-default .navbar-brand img{ height:36px;}
+.navbar-default .navbar-brand img{ height:90px;}
 .navbar-default .navbar-brand:hover{ background:#fff;}
 .navbar-default .navbar-brand:focus{ background:#fff;}
 .navbar-default .logo-text{ float:left; font-size:13px; font-weight:700; margin-left:10vh; padding:15px; color:#fff;}
@@ -320,7 +320,7 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 .navbar-default .navbar-nav li:hover .sub-menu{ display:block;}
 .navbar-default .navbar-nav li .sub-menu{ width:200px; margin:0; padding:10px 0; position:absolute; left:0; top:100%; background-color:#fff; display:none; border-radius:4px; box-shadow:0 10px 15px rgba(0,0,0,0.2);}
 .navbar-default .navbar-nav li .sub-menu:before{content:'';width: 0;height: 0; border-style: solid;border-width: 0 6px 6px 6px;border-color: transparent transparent #fff transparent; position:absolute; left:15px; top:-6px;}
-.navbar-default .navbar-nav li .sub-menu.with-image{ width:340px; background:url(../images/320d2.png) right bottom no-repeat; background-color:#fff; background-size:auto 95%;}
+.navbar-default .navbar-nav li .sub-menu.with-image{ width:340px; background:url(../images/320d.png) right bottom no-repeat; background-color:#fff; background-size:auto 95%;}
 .navbar-default .navbar-nav li .sub-menu li{ width:100%; float:left; padding:0 15px; margin:0; list-style:none;}
 .navbar-default .navbar-nav li .sub-menu li a{ width:100%; float:left; line-height:30px; border:none; padding:0; color:#384254; opacity:0.5; font-size:12px;}
 .navbar-default .navbar-nav li .sub-menu li a:hover{ border:none; text-decoration:none; color:#083e73; opacity:1;}
@@ -610,7 +610,7 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 
 /* SOLUTIONS */
 .solutions{ width:100%; float:left; padding-top:50px; background:url("") bottom center no-repeat;}
-.solutions .features-box{ width:100%; margin-bottom:100px;}
+.solutions .features-box{ width:100%; margin-bottom:25px;}
 .solutions .features-box figure{ width:100%; float:left; margin-bottom:15px; position:relative;}
 .solutions .features-box figure img{ width:100%; border-radius:6px;}
 .solutions .features-box small{ height:26px; line-height:26px; display:inline-block; margin-bottom:5px; color:#fff; border:1px solid #c4c9d3; background:#c4c9d3; padding:0 7px; border-radius:3px;}
@@ -622,7 +622,7 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 
 
 /* RENT */
-.rent{ width:100%; float:left; padding-bottom: 50px; background:url("") bottom center no-repeat;}
+.rent{ width:100%; float:left; padding-bottom: 25px; background:url("") bottom center no-repeat;}
 .rent .switch-btn{ height:48px; line-height:50px; padding:0 25px; display:inline-block; background:#083e73; border-radius:4px; color:#fff; font-size:15px; font-weight:700;}
 .rent .rent-img { padding: 20px; }
 .rent-img-inner { max-width: 25%; }
@@ -640,7 +640,7 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 
 
 /* PROJECTS */
-.projects{ width:100%; float:left; padding-top:100px; background:url("") bottom center no-repeat;}
+.projects{ width:100%; float:left; background:url("") bottom center no-repeat;}
 .projects .filter{ width:100%; float:left; margin:0; margin-bottom:-30px; padding:0; padding-left:30px; background:#083e73; border-radius:4px; position:relative; z-index:2;}
 .projects .filter li{ float:left; margin-right:10px; list-style:none;}
 .projects .filter li a{ float:left; line-height:60px; padding:0 10px; font-weight:700; color:#fff; opacity:0.6;}
@@ -681,9 +681,10 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 
 
 /* ABOUT PREDIO */
-.about-etrade{ width:100%; float:left; padding:50px 0;}
+.about-etrade{ width:100%; float:left; padding:25px 0;}
 .about-etrade .lead{ display:block; font-family:'Playfair Display', serif; font-size:20px; line-height:30px; color:#9ba0a9; margin-bottom:35px;}
 .about-etrade .signature{ width:125px;}
+.about-etrade .about-img {height: 100px; }
 .about-etrade .download-btn{ height:48px; line-height:50px; padding:0 25px; display:inline-block; background:#083e73; border-radius:4px; color:#fff; font-size:15px; font-weight:700;}
 
 
@@ -731,6 +732,8 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 .footer-bar .content-bar i{ width:70px; height:70px; float:left; background:#fff; font-size:50px; color:#083e73; margin-right:15px; text-align:center; border-radius:6px;}
 .footer-bar .content-bar h4{ font-family:'Fjalla One', sans-serif; font-size:21px; color:#fff; margin:0; position:relative; display:inline-block; padding-bottom:10px; margin-bottom:10px;}
 .footer-bar .content-bar h4:after{ content:""; width:30px; height:2px; position:absolute; left:0; bottom:0; background:#fff;}
+.footer-bar .content-bar h6{ font-family:'Fjalla One', sans-serif; font-size:14px; color:#fff; margin:0; position:relative; display:inline-block; padding-bottom:5px; margin-bottom:5px;}
+.footer-bar .content-bar h6:after{ content:""; width:30px; height:1px; position:absolute; left:0; bottom:0; background:#fff;}
 .footer-bar .content-bar span{ font-size:13px; color:#fff; line-height:16px; display:block;}
 .footer-bar .content-bar a{ font-weight:700; color:#fff;}
 
