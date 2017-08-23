@@ -6,23 +6,23 @@
         <h2>Forma de Contacto</h2>
         <h5>Escríbenos aquí, o mándanos un correo a <a href="mailto:contacto@etrade.mx"><u>contacto@etrade.mx</u></a></h5>
         <!--form role="form" method="post" action="../assets/php/contacto.php"-->
-        <form role="form" method="post" action="./assets/php/contacto.php">
+        <form role="form" method="post" action="./assets/php/contacto.php" (submit)="onSubmit(message)">
         
           <div class="form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Nombre *" required>
+            <input type="text" name="name" class="form-control" id="name" [(ngModel)]="message.name" placeholder="Nombre *" required>
           </div>
         
           <div class="form-group">
-            <input type="email" name="email" class="form-control" id="email" placeholder="Correo Electrónico *" required>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Correo Electrónico *" [(ngModel)]="message.email" required>
           </div>
   
           <div class="form-group">
-            <input type="number" name="phone" class="form-control" id="phone" placeholder="Teléfono (Opcional)" required>
+            <input type="number" name="phone" class="form-control" id="phone" placeholder="Teléfono (Opcional)" [(ngModel)]="message.phone" required>
           </div>
         
           <div class="form-group">
-            <select class="form-control" name="option" id="option" required>
-              <option value=" " disabled selected hidden>Interés / Servicio * </option>
+            <select class="form-control" name="option" id="option" [(ngModel)]="message.option" required>
+              <option value="Interés / Servicio" disabled selected>Interés / Servicio * </option>
               <option value="civil">Obra Civil | Edificaciones, Mantenimiento, Conservación </option>
               <option value="electromecanica">Obra Electromecánica | Subestaciones, Lineas de Transmisión</option>
               <option value="hidraulica">Obra Hidráulica | Bordos, Ollas de Agua, Alcantarillado Sanitario</option>
@@ -31,8 +31,11 @@
           </div>
   
           <div class="form-group">
-            <textarea type="text" name="message" class="form-control" placeholder="Mensaje *" id="message" rows="10" required></textarea> 
+            <textarea type="text" name="message" class="form-control" placeholder="Mensaje *" [(ngModel)]="message.message" id="message" rows="10" required></textarea> 
           </div> 
+
+          <div class="alert alert-success" *ngIf="msgSent"><strong>Gracias !</strong><p>Tu mensaje ha sido enviado. Nos pondremos en contacto contigo en breve.</p></div>
+          <div class="alert alert-danger" *ngIf="msgNotSent"><strong>Opps !</strong><p>Ocurrió un error. Intenta más tarde o mándanos un correo a <a href="mailto:contacto@etrade.mx"><u>contacto@etrade.mx</u></a></p></div>
 
           <button id="submit" name="submit" type="submit" class="btn btn-hg btn-primary">Enviar</button>
 

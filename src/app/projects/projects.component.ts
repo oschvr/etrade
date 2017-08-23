@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactService, IMessage } from '../contact.service';
 
 @Component({
   selector: 'app-projects',
@@ -7,13 +8,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  message: IMessage = {};
+
+  msgSent: boolean = false;
+  msgNotSent: boolean = false;
+
+  constructor(
+    private contactService: ContactService
+  ) { }
 
   ngOnInit() {
   }
 
-  onSubmit(){
-    console.log("Contact Trigger");
+  onSubmit(message: IMessage){
+    this.contactService.sendEmail(message).subscribe(res =>{
+      this.msgSent = true;
+      setTimeout(()=>{
+        this.msgSent = false;
+      }, 5000);
+      console.log("Success: ", res);
+    }, err =>{
+      this.msgNotSent = true;
+      setTimeout(()=>{
+        this.msgNotSent = false;
+      }, 8000);
+      console.log("Error: ", err);
+    })
   }
 
 }

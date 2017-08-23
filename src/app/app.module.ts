@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -16,6 +17,8 @@ import { ServicesComponent } from './services/services.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { RentComponent } from './rent/rent.component';
+
+import { ContactService } from './contact.service';
 
 const appRoutes: Routes = [
   {
@@ -41,15 +44,18 @@ const appRoutes: Routes = [
     ServicesComponent,
     NavbarComponent,
     StatisticsComponent,
-    RentComponent
+    RentComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     NgbModule.forRoot(),
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    ContactService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
