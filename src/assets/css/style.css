@@ -345,10 +345,10 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 .predio-slider .owl-item{ position:relative;}
 .predio-slider .owl-item:after{content:''; width:100%; height:100%; position:absolute; left:0; top:0; background:url(../images/slider-pattern.png) center #8F8F8F; opacity:0.1; z-index:1;}
 .predio-slider .owl-item img{ max-width:inherit; width:inherit; min-width:100%; min-height:100%;}
-.predio-slider .hero-content{ width:100%; position:absolute; left:0; top:0; padding:calc(50vh - 100px) 0; z-index:2;}
-.predio-slider .hero-content .text1{ color:#EDEDED; font-weight:400; font-size:22px; margin-bottom:10px; word-wrap: break-word;}
-.predio-slider .hero-content .text2{ font-weight:700; font-size:14px; color:#fff; position:relative; padding-left:20px; margin-bottom:40px; word-wrap: break-word;}
-.predio-slider .hero-content .slide-btn{ height:48px; line-height:50px; padding:0 30px; display:inline-block; background:#083e73; border-radius:4px; color:#fff; font-size:25px; font-weight:700;}
+.predio-slider .hero-content{ width:100%; position:absolute; left:0; top:0; padding:calc(50vh - 150px) 0; z-index:2;}
+.predio-slider .hero-content .text1{ color:#EDEDED; font-weight:400; font-size:12px; margin-bottom:10px; word-wrap: break-word;}
+.predio-slider .hero-content .text2{ font-weight:700; font-size:10px; color:#fff; position:relative; padding-left:20px; margin-bottom:40px; word-wrap: break-word;}
+.predio-slider .hero-content .slide-btn{ height:48px; line-height:50px; padding:0 20px; display:inline-block; background:#083e73; border-radius:4px; color:#fff; font-size:18px; font-weight:400;}
 .predio-slider .hero-content .slide-btn:hover{ background:#; color:#384254; text-decoration:none; box-shadow:0 10px 40px rgba(0,0,0,0.2);}
 .predio-slider .owl-nav{ width:100px; height:100%; position:absolute; right:20px; top:0;}
 .predio-slider .owl-nav .owl-prev{ width:50px; height:40px; line-height:40px; float:left; border:1px solid rgba(255,255,255,0.4); text-indent:-99999px; position:absolute; top:50%; right:49px; margin-top:-20px; padding:0 15px; color:#fff; transform:rotate(180deg);}
@@ -368,8 +368,8 @@ content: '';top: -2em;left: 5.5em;width: 20%;height: 0em;border-bottom: 2em soli
 	.predio-slider .owl-item:after{content:''; width:100%; height:100%; position:absolute; left:0; top:0; background:url(../images/slider-pattern.png) center #000; opacity:0.25; z-index:1;}
 	.predio-slider .owl-item img{ max-width:inherit; width:inherit; min-width:100%; min-height:100%;}
 	.predio-slider .hero-content{ width:100%; position:absolute; left:0; top:0; padding:calc(50vh - 100px) 0; z-index:2;}
-	.predio-slider .hero-content .text1{ color:#D2D2D2; font-size:75px; margin-bottom:20px;}
-	.predio-slider .hero-content .text2{ font-weight:700; font-size:52px; color:#fff; position:relative; padding-left:20px; margin-bottom:40px;}
+	.predio-slider .hero-content .text1{ color:#F1F1F1; font-size:75px; margin-bottom:20px;}
+	.predio-slider .hero-content .text2{ font-weight:700; font-size:52px; color:#fff; position:relative; margin-bottom:40px;}
 	.predio-slider .hero-content .slide-btn{ height:48px; line-height:50px; padding:0 25px; display:inline-block; background:#083e73; border-radius:4px; color:#fff; font-size:15px; font-weight:700;}
 	.predio-slider .hero-content .slide-btn:hover{ background:#; color:#384254; text-decoration:none; box-shadow:0 10px 40px rgba(0,0,0,0.2);}
 	.predio-slider .owl-nav{ width:100px; height:100%; position:absolute; right:20px; top:0;}

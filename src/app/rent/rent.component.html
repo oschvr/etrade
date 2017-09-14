@@ -11,7 +11,7 @@
         <h4>Maquinaria Pesada</h4>
         <div>                  
           <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-3" *ngFor="let machine of machinery; let i = index">
+            <div class="col-xs-6 col-sm-4 col-md-3" *ngFor="let machine of machinery; let i = index">
               <a class="thumbnail" (click)="changeMachine(i)">
                 <img class="rent-img" src="{{machine.img}}" alt="{{machine.name}}">
 
